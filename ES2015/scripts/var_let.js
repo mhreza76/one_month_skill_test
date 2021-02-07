@@ -19,6 +19,6 @@ if (a === 1) {
     var b_1 = 20;
     console.log("a = ", a, "b = ", b_1);
 }
-var a = 3;
+// var a = 3; var can be declear manytimes in same scoope
 console.log("a = ", a, "b = ", b);
 //# sourceMappingURL=var_let.js.map
