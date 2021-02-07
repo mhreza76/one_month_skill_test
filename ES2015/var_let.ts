@@ -18,7 +18,7 @@ if(a === 1){
     let b = 20;
     console.log("a = ", a, "b = ", b);
 }
-var a = 3;
+// var a = 3; var can be declear manytimes in same scoope
 console.log("a = ", a, "b = ", b);
 
 
