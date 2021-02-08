@@ -1,6 +1,7 @@
 let display_color =  function(msg, ...colors){
     console.log(arguments.length);
     console.log(msg);
+    console.log(colors);
     for (let i in colors) console.log(colors[i]);
 }
 let message = "List of colors"; 

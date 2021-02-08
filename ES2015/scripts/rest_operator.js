@@ -6,6 +6,7 @@ var display_color = function (msg) {
     }
     console.log(arguments.length);
     console.log(msg);
+    console.log(colors);
     for (var i in colors)
         console.log(colors[i]);
 };
