@@ -1,4 +1,8 @@
 "use strict";
+/*
+Rest operator specified in function declaration,
+Rest takes individual variables and combine into a Array
+*/
 var display_color = function (msg) {
     var colors = [];
     for (var _i = 1; _i < arguments.length; _i++) {
