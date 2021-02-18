@@ -10,6 +10,18 @@ import { Component, OnInit } from '@angular/core';
     <h2>{{name.toLocaleUpperCase()}}</h2>
     <h2>{{user()}}</h2>
     <h2>{{siteUrl}}</h2>
+  
+    <input type="text" value="Name">
+    
+    <!-- not correct way , interpolation is not working with boolean -->
+    <input disabled = "{{false}}" id="{{myId}}" type="text" value="testId">
+    
+    <!-- correct ways -->
+    <input [id]="myId" type="text" value="testId">
+    <input [disabled]="true" id="{{myId}}" type="text" value="testId">
+    <input [disabled]="isDisabled" id="{{myId}}" type="text" value="testId">
+    <!-- another way -->
+    <input bind-disabled="isDisabled" id="{{myId}}" type="text" value="testId">
 
   `,
   styles: []
@@ -18,6 +30,9 @@ export class TestComponent implements OnInit {
 
   public name = "Reza";
   public siteUrl = window.location.href;
+
+  public myId = "1105060";
+  public isDisabled = false;
   constructor() { }
 
   ngOnInit(): void {
