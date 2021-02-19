@@ -1,0 +1,13 @@
+<h2 *ngIf="displayName; else elseBlock">nglf Directive</h2>
+
+<br>
+<!-- ANOTHER WAY  -->
+<h2 *ngIf="displayName; then thenBlock; else elseBlock"></h2>
+
+<ng-template #thenBlock>
+    <h2>Name is Reza</h2>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h2>Name is hidden</h2>
+</ng-template>
