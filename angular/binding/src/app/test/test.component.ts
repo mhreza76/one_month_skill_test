@@ -37,7 +37,13 @@ import { Component, OnInit } from '@angular/core';
     <h2 [style.color]="highlightColor">Style Binding 2</h2>
     <h2 [ngStyle]="titleStyles">Style Binding 3</h2>
 
-  `,
+    <!-- Event binding  -->
+    <button (click)="onClick()">Greet</button>
+    <button (click)="onClick2($event)">Event</button>
+    <button (click)="greeting='Welcome Online Exam'">Exam</button>
+    {{greeting}}
+
+      `,
   styles: [`
     .text-success{
       color: green;
@@ -75,6 +81,18 @@ export class TestComponent implements OnInit {
   public titleStyles = {
     color: "blue",
     fontStyle: "italic"
+  }
+
+
+  public greeting = "";
+  onClick(){
+    console.log("working with angular");
+    this.greeting = "working with angular";
+  }
+
+  onClick2(event){
+    console.log(event);
+    this.greeting = "working with angular event binding";
   }
   constructor() { }
 
