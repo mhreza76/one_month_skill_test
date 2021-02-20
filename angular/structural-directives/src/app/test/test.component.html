@@ -21,3 +21,12 @@
     <div *ngSwitchCase="'green'">You picked green color</div>
     <div *ngSwitchDefault>Pick Again</div>
 </div>
+
+<!-- ngFor  -->
+<div *ngFor="let color of colors; index as i">
+    <h3>{{i}} {{color}}</h3>
+</div>
+<br>
+<div *ngFor="let color of colors; first as f">
+    <h4>{{f}} {{color}}</h4>
+</div>

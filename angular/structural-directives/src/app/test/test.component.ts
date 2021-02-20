@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { builtinModules } from 'node:module';
 
 @Component({
   selector: 'app-test',
@@ -9,6 +10,9 @@ export class TestComponent implements OnInit {
 
   displayName = false;
   color = 'green';
+
+  public colors = ["red", "blue", "green", "yellow" ];
+
   constructor() { }
 
   ngOnInit(): void {
