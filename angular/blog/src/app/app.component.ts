@@ -21,6 +21,9 @@ export class AppComponent {
   b = 200;
   siteUrl = window.location.href;
 
-
+  //function call with parameter
+  getFullName(name){
+    alert(name)
+  }
 
 }
