@@ -8,9 +8,36 @@
 <h1>{{siteUrl}}</h1>
 
 <button (click)="getFullName('Mahmudul Hasan Reza')">get my name</button>
-
+<br>
 <!-- pass variable  -->
 <!-- <button (click)="getFullName(name)">get my name</button> -->
+<button (click)="myEvent('click event')">Click me</button>
+<br> <br>
+<input type="text" (keyup)="myEvent('keyup event')">
+<br> <br>
+<input type="text" placeholder="keyup" #box (keyup)="myEvent(box.value)">
+<br> <br>
+<input type="text" placeholder="keyup enter" #box1 (keyup.enter)="myEvent(box1.value)">
+<br> <br>
+<input type="text" placeholder="keyup space" #keyspace (keyup.space)="myEvent(keyspace.value)">
+<br> <br>
+<input type="text" placeholder="keydown" #keydown (keydown)="myEvent(keydown.value)">
 
-<app-user-list> </app-user-list>
+<!-- when click in box then again click outside the box  -->
+<br> <br>
+<input type="text" placeholder="blue event" (blur)="myEvent('Blur event')">
+
+<!--we can use two event ta a time  -->
+<br> <br>
+<input type="text" placeholder="blue event keydown event" #keydown1 (keydown)="myEvent(keydown1.value)" (blur)="myEvent('blur event')">
+
+
+<br> <br>
+<div (mouseover)="myEvent('mouse in')" style="background-color: aqua;">
+    MouseOver Events
+</div>
+<br> <br>
+<div (mouseleave)="myEvent('mouse leave')" style="background-color: chartreuse;">
+    MouseLeave Events
+</div>
 <app-login></app-login>

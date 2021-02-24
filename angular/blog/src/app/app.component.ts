@@ -26,4 +26,7 @@ export class AppComponent {
     alert(name)
   }
 
+  myEvent(evt){
+    console.warn(evt)
+  }
 }
