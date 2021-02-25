@@ -62,5 +62,13 @@
 <br><br>
 <button (click)="enableBox()">Enable TextBox</button>
 
-
+<br><br>
+<h3> get Form Value</h3>
+<form #simpleForm="ngForm" (ngSubmit)="getUserValue(simpleForm.value)">
+    <input type="text" ngModel name="username" placeholder="enter name"> <br><br>
+    <input type="text" ngModel name="age" placeholder="enter age"> <br><br>
+    <input type="text" ngModel name="address" placeholder="enter address"> <br><br>
+    <input type="password" ngModel name="password" placeholder="enter password"> <br><br>
+    <button>Get Form Value</button>
+</form>
 <app-login></app-login>

@@ -47,4 +47,10 @@ export class AppComponent {
   enableBox(){
     this.disableBox = false;
   } 
+
+  // get form value 
+  getUserValue(value)
+  {
+    console.warn(value)
+  }
 }
