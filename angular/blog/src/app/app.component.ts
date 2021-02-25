@@ -35,10 +35,16 @@ export class AppComponent {
     console.warn(val)
     this.currentval = val;
   }
-  
+
   currentval2="";
   getValue(val){
     console.warn(val)
     this.currentval2 = val;
   }
+
+  // property binding
+  disableBox = true;
+  enableBox(){
+    this.disableBox = false;
+  } 
 }

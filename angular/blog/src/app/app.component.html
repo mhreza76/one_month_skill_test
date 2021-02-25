@@ -51,4 +51,16 @@
 <input type="text" #box2>
 <button (click)="getValue(box2.value)">Get Value</button>
 <h3>{{currentval2}}</h3>
+
+<h2>Property Binding</h2>
+<!-- property binding -->
+<input type="text" [disabled]="disableBox" [value]="name">
+<br><br>
+<!-- Interpolation  -->
+<!-- Interpolation is not able to handle this disable attribute -->
+<input type="text" disabled={{disableBox}} value={{name}}>
+<br><br>
+<button (click)="enableBox()">Enable TextBox</button>
+
+
 <app-login></app-login>
