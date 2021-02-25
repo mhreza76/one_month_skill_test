@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+input[type=text] {
+    height: 35px;
+    width: 300px;
+    outline: none;
+    border-radius: 5px;
+}
+
+input[type=checkbox] {
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+span {
+    padding-left: 20px;
+}
+
+.jumbotron {
+    background-color: yellow;
+    font-size: 35px;
+    padding: 4%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.task {
+    font-size: 15px;
+}
+
+th {
+    background-color: yellow;
+    font-size: 18px;
+}
+
+.row {
+    justify-content: center;
+    display: flex;
+}
+
+.col-md-12 {
+    width: 40%;
+}
+
+#close {
+    float: right;
+    padding-right: 5px;
+    cursor: pointer;
+}

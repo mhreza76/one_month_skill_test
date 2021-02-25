@@ -40,4 +40,15 @@
 <div (mouseleave)="myEvent('mouse leave')" style="background-color: chartreuse;">
     MouseLeave Events
 </div>
+
+<br>
+<p>live text print</p>
+<input type="text" (keyup)="getLiveValue($event.target.value)">
+<h3>{{currentval}}</h3>
+
+
+<p>print after button click</p>
+<input type="text" #box2>
+<button (click)="getValue(box2.value)">Get Value</button>
+<h3>{{currentval2}}</h3>
 <app-login></app-login>

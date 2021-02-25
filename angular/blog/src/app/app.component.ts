@@ -29,4 +29,16 @@ export class AppComponent {
   myEvent(evt){
     console.warn(evt)
   }
+
+  currentval="";
+  getLiveValue(val){
+    console.warn(val)
+    this.currentval = val;
+  }
+  
+  currentval2="";
+  getValue(val){
+    console.warn(val)
+    this.currentval2 = val;
+  }
 }
