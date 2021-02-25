@@ -53,4 +53,12 @@ export class AppComponent {
   {
     console.warn(value)
   }
+
+  //style Binding
+  dyColor = "orange";
+  err = false;
+  updateColor()
+  {
+    this.dyColor = "blue";
+  }
 }

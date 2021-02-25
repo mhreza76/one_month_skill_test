@@ -71,4 +71,11 @@
     <input type="password" ngModel name="password" placeholder="enter password"> <br><br>
     <button>Get Form Value</button>
 </form>
+
+<!-- style binding -->
+<h1 style="color: red;">Style Binding</h1>
+<h2 [style.color]="'green'">Header 1</h2>
+<h2 [style.color]="dyColor">Dynamic Style</h2>
+<button (click)="updateColor()">Update Color</button>
+<h2 [style.color]="err?'red':'green'">Conditional Style</h2>
 <app-login></app-login>
