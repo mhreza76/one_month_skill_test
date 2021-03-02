@@ -64,4 +64,8 @@ export class AppComponent {
 
   //data pass to child component
   full_name = "Mahmudul Hasan Reza"
+  person = {
+    name: "reza",
+    age: 24
+  }
 }
