@@ -61,4 +61,7 @@ export class AppComponent {
   {
     this.dyColor = "blue";
   }
+
+  //data pass to child component
+  full_name = "Mahmudul Hasan Reza"
 }

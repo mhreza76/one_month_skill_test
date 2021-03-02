@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UsersModule } from "./users/users.module";
 import { FormsModule } from "@angular/forms";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,7 +15,9 @@ import { FormsModule } from "@angular/forms";
   imports: [
     BrowserModule,
     UsersModule,
-    FormsModule
+    FormsModule,
+    NgbModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

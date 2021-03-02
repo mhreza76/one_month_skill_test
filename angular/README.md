@@ -14,3 +14,13 @@ ng new project-name
 ```cli
 ng serve
 ```
+
+#### add bootstrap on a project
+```cli
+ng add @ng-bootstrap/ng-bootstrap
+```
+
+#### add Material UI
+```CLI
+    ng add @angular/material
+```
