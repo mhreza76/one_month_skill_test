@@ -5,11 +5,6 @@
 ng new project-name
 ```
 
-#### create new project
-```cli
-ng new project-name
-```
-
 #### run project
 ```cli
 ng serve
@@ -23,4 +18,14 @@ ng add @ng-bootstrap/ng-bootstrap
 #### add Material UI
 ```CLI
     ng add @angular/material
+```
+
+#### add Material UI
+```CLI
+    ng g directive directive-name
+```
+
+#### add Material UI
+```CLI
+    ng g service service-name
 ```
