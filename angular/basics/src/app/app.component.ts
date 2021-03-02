@@ -8,8 +8,11 @@ import { UserServiceService } from "./user-service.service";
 })
 export class AppComponent {
   title = 'basics';
-
+  tododata:any = []
   constructor(private user:UserServiceService){
-    this.user.getData().subscribe(data=>{console.warn(data)})
+    this.user.getData().subscribe((data:any)=>{
+      console.warn(data);
+      this.tododata = data;
+    })
   }
 }
