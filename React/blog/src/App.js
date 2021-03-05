@@ -18,7 +18,7 @@ function App() {
         >
         </a>
         <ClassComp/>
-        <FunctionComp/>
+        <FunctionComp text="pass from app.js"/>
       </header>
     </div>
   );
