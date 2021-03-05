@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import ClassComp from "./ClassComp";
+import FunctionComp from "./FunctionComp"
 function App() {
   return (
     <div className="App">
@@ -15,9 +16,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-        Learn
         </a>
         <ClassComp/>
+        <FunctionComp/>
       </header>
     </div>
   );
