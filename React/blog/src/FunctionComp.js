@@ -1,14 +1,17 @@
 import React from "react"
 
-export default function func_comp(prop){
+export default function func_comp(props){
 
     const red=()=>{
         alert("red function called")
 
     }
     
-    return   <div>
-            <h1 onClick={red}>Function component called</h1>
-            <h1 onClick={red}>{prop.text}</h1>
+    return(
+        <div>
+            <h4 onClick={red}>Function component called</h4>
+            <h4>{props.text}</h4>
+            <h4>{props.data.name}</h4>
         </div>
+    )
 } 
